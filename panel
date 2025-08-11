@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pterodactyl Panel Creator</title>
+    <meta property="og:title" content=" Create Panel Bot WhatsApp ">
+    <meta property="og:description" content="Panel gratis, dapatkan panel gratis dengan spesifikasi 1Gb Ram dan 40% Cpu. Coba aja dulu, terasa kurang? Upgrade Dong😁">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://jhonaley.net/panel">
+    <meta property="og:image" content="https://d.top4top.io/p_3475fkczi0.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:site_name" content="Jhonaley Barbosa">
+    <meta property="tiktok:domain" content="jhonaley.net">
+    <meta property="facebook:domain" content="jhonaley.net">
+    <meta property="instagram:domain" content="jhonaley.net">
+    <meta property="twitter:domain" content="jhonaley.net">
+    <meta property="linkedin:domain" content="jhonaley.net">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="//code.tidio.co/89waqnaf0brzsuxq81sb4sg6kwuspaxp.js" async></script>
+    <link rel="canonical" href="https://jhonaley.net/panel"/>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            font-family: 'Inter', sans-serif;
+            color: #fff;
+        }
+
+        .video-background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -100;
+            filter: brightness(50%);
+        }
+
+        .container {
+            max-width: 90%;
+            margin: 2rem auto;
+            padding: 2rem;
+            background-color: rgba(255, 255, 255, .1);
+            backdrop-filter: blur(10px);
+            border-radius: 1rem;
+            box-shadow: 0 10px 15px rgba(0, 0, 0, .2);
+            position: relative;
+            z-index: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            max-height: calc(100vh - 4rem);
+            overflow-y: auto;
+            -webkit-overflow-scrolling: touch;
+        }
+
+        .container::-webkit-scrollbar {
+            width: 8px;
+            height: 8px;
+        }
+
+        .container::-webkit-scrollbar-track {
+            background: rgba(255, 255, 255, .1);
+            border-radius: 10px;
+        }
+
+        .container::-webkit-scrollbar-thumb {
+            background: linear-gradient(135deg, #ff4757, #ff6b7a);
+            border-radius: 10px;
+            border: 2px solid rgba(255, 255, 255, .2);
+        }
+
+        .container::-webkit-scrollbar-thumb:hover {
+            background: linear-gradient(135deg, #ff6b7a, #ff4757);
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: .5rem;
+            font-weight: 600;
+            color: #fff;
+        }
+
+        .form-group input, .form-group select {
+            width: 100%;
+            padding: .75rem;
+            border-radius: .5rem;
+            border: 1px solid rgba(255, 255, 255, .3);
+            background-color: rgba(255, 255, 255, .05);
+            color: #fff;
+            transition: border-color .2s;
+        }
+
+        .form-group input:focus, .form-group select:focus {
+            outline: none;
+            border-color: #ff6b7a;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, #ff4757, #ff6b7a);
+            color: white;
+            padding: .75rem 1.5rem;
+            border-radius: .5rem;
+            font-weight: 700;
+            transition: all .3s cubic-bezier(.23, 1, .32, 1);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 10px rgba(255, 71, 87, .3);
+        }
+
+        .message-box {
+            background-color: rgba(255, 255, 255, .15);
+            border-radius: .5rem;
+            padding: 1rem;
+            margin-top: 1.5rem;
+            color: #fff;
+            font-weight: 600;
+        }
+
+        .message-box.error {
+            background-color: rgba(229, 62, 62, .5)
+        }
+
+        #logoutBtn, #ownerPanelLink, #myPanelLink {
+            background-color: rgba(255, 71, 87, .7);
+            transition: all .3s cubic-bezier(.23, 1, .32, 1);
+        }
+
+        #logoutBtn:hover, #ownerPanelLink:hover, #myPanelLink:hover {
+            background-color: rgba(255, 71, 87, .9);
+            transform: translateY(-2px);
+            box-shadow: 0 5px 10px rgba(255, 71, 87, .3);
+        }
+
+        #freeUserUpgradeSection {
+            background-color: rgba(255, 255, 255, .15);
+            border: 1px solid rgba(255, 71, 87, .3);
+        }
+
+        #upgradeUserBtn {
+            background: linear-gradient(135deg, #ff4757, #ff6b7a);
+        }
+
+        #upgradeUserBtn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 10px rgba(255, 71, 87, .3);
+        }
+
+        #limitInfoSection {
+            background-color: rgba(255, 255, 255, .15);
+            border: 1px solid rgba(255, 71, 87, .3);
+        }
+    </style>
+</head>
+<body>
+    <video autoplay muted loop class="video-background">
+        <source src="https://h.top4top.io/m_35057gcm30.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <div class="container">
+        <h1 class="text-3xl font-bold text-center mb-6 text-white">Buat Panel Bot WhatsApp </h1>
+        <p id="currentUserInfo" class="text-center text-gray-200 mb-4">Memuat info pengguna...</p>
+        <button id="logoutBtn" class="text-white font-bold py-2 px-4 rounded-lg mb-6 w-full">Logout</button>
+        <a href="owner" id="ownerPanelLink" class="hidden text-white font-bold py-2 px-4 rounded-lg mb-6 w-full text-center block">Panel Owner</a>
+        <a href="detail-panel" id="myPanelLink" class="text-white font-bold py-2 px-4 rounded-lg mb-6 w-full text-center block">Lihat Detail Panel Saya</a>
+
+        <div id="limitInfoSection" class="p-4 rounded-lg mb-6 text-white hidden">
+            <p class="font-bold mb-2" id="limitMessageTitle"></p>
+            <p class="text-sm" id="limitMessageContent"></p>
+        </div>
+
+        <div id="freeUserUpgradeSection" class="hidden p-4 rounded-lg mb-6 text-white">
+            <p class="text-sm font-bold mb-3">Benefit Upgrade ke User:</p>
+            <ul class="list-disc list-inside text-sm mb-4">
+                <li>Dapat membuat panel 1-Unlimited GB RAM dan CPU.</li>
+                <li>Limit 10x pembuatan panel.</li>
+                <li>Garansi 30 hari (1x Replace/panel)</li>
+                <li>masa aktif panel 30 hari</li>
+                <li>Tersedia 4 Server</li>
+                <p class="text-sm font-bold mb-3">Harga : Rp3000,00/3K</p>
+            </ul>
+            <p class="text-sm font-bold mb-3">Benefit Upgrade ke Reseller:</p>
+            <ul class="list-disc list-inside text-sm mb-4">
+                <li>Unlimited Pembuatan Panel</li>
+                <li>Dapat membuat panel 1-Unlimited Gb RAM dan CPU</li>
+                <li>permanen sampe pensi</li>
+                <li>bisa dijual lagi</li>
+                <li>Tersedia 4 Server</li>
+                <p class="text-sm font-bold mb-3">Harga : Rp5000,00/5K</p>
+            </ul>
+            <p class="text-sm font-bold mb-3">Yuk Upgrade Sekarang!!!:</p>
+            <a id="upgradeUserBtn" target="_blank" class="text-white font-bold py-2 px-4 rounded-lg w-full block text-center">Upgrade Role</a>
+        </div>
+
+        <form id="panelForm" class="space-y-4">
+            <div class="form-group">
+                <label for="username">Nama Pengguna (untuk Panel):</label>
+                <input type="text" id="username" placeholder="Masukkan nama pengguna" class="rounded-lg p-2 w-full" required>
+            </div>
+            <div class="form-group">
+                <label for="serverSelect">Pilih Server:</label>
+                <select id="serverSelect" class="rounded-lg p-2 w-full">
+                    <option value="1">Server 1 (Publik)</option>
+                    <option value="2">Server 2 (Private)</option>
+                    <option value="3">Server 3 (Private)</option>
+                    <option value="4">Server 4 (Private)</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="ram">Pilih RAM (GB):</label>
+                <select id="ram" class="rounded-lg p-2 w-full">
+                    <option value="1">1 GB</option>
+                    <option value="2">2 GB</option>
+                    <option value="3">3 GB</option>
+                    <option value="4">4 GB</option>
+                    <option value="5">5 GB</option>
+                    <option value="6">6 GB</option>
+                    <option value="7">7 GB</option>
+                    <option value="8">8 GB</option>
+                    <option value="9">9 GB</option>
+                    <option value="10">10 GB</option>
+                    <option value="unli">Unlimited</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="cpu">Pilih CPU (%):</label>
+                <select id="cpu" class="rounded-lg p-2 w-full">
+                    <option value="40">40%</option>
+                    <option value="60">60%</option>
+                    <option value="80">80%</option>
+                    <option value="100">100%</option>
+                    <option value="120">120%</option>
+                    <option value="140">140%</option>
+                    <option value="160">160%</option>
+                    <option value="180">180%</option>
+                    <option value="200">200%</option>
+                    <option value="220">220%</option>
+                    <option value="unli">Unlimited</option>
+                </select>
+            </div>
+            <button type="submit" class="btn-primary">Buat Panel</button>
+        </form>
+        <div id="messageBox" class="message-box hidden"></div>
+    </div>
+
+    <script type="module">
+        const _0x55f007=_0x2251;(function(_0x1dc103,_0x554b7a){const _0x10a76c=_0x2251,_0x14d3b2=_0x1dc103();while(!![]){try{const _0x2a9678=-parseInt(_0x10a76c(0x14e))/0x1+parseInt(_0x10a76c(0x148))/0x2+-parseInt(_0x10a76c(0xd7))/0x3*(-parseInt(_0x10a76c(0xd8))/0x4)+-parseInt(_0x10a76c(0x106))/0x5+-parseInt(_0x10a76c(0x154))/0x6+-parseInt(_0x10a76c(0xea))/0x7*(parseInt(_0x10a76c(0x108))/0x8)+parseInt(_0x10a76c(0x103))/0x9*(parseInt(_0x10a76c(0x104))/0xa);if(_0x2a9678===_0x554b7a)break;else _0x14d3b2['push'](_0x14d3b2['shift']());}catch(_0x2eb459){_0x14d3b2['push'](_0x14d3b2['shift']());}}}(_0x5eb4,0x8d764));import{initializeApp}from'https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js';import{getAuth,onAuthStateChanged,signOut}from'https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js';import{getFirestore,doc,getDoc,setDoc}from'https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js';let firebaseConfig={};function _0x5eb4(){const _0x1283c3=['panelForm','displayName','message','jh2','1-Unlimited\x20GB','âŒ\x20Terjadi\x20kesalahan\x20saat\x20menghubungi\x20server:\x20','log','addEventListener','hidden','cpu','Unknown\x20error','artifacts/','Error\x20fetching\x20user\x20profile:','exists','/users/','user-','/user_data/profile','\x20Mengarahkan\x20ke\x20halaman\x20detail...','Peran\x20pengguna\x20diatur\x20ke:','myPanelLink','Error\x20calling\x20backend:','error','limitInfoSection','value','\x20Anda\x20memiliki\x20akses\x20ke\x20','substring','Sebagai\x20pengguna\x20gratis,\x20Anda\x20hanya\x20dapat\x20membuat\x20panel\x201GB\x20RAM\x20dan\x2040%\x20CPU.','Owner','info','messageBox','Informasi\x20Batas\x20Akun\x20Anda\x20(','N/A','1413096uhcSLJ','onAuthStateChanged\x20fired.\x20User:','freeUserUpgradeSection','jh1','HTTP\x20error!\x20status:\x20','classList','722234usvmZe','toISOString','ownerPanelLink','option','Anda\x20dapat\x20membuat\x20','Firebase\x20config\x20loaded:','2540964eZEJmF','Unknown\x20Role','role','jhonaley.php','success','href','role3','owner','createElement','33ZvfwLe','312328UxwgSt','panelCreationsCount','x\x20from\x20','max','DOM\x20Content\x20Loaded\x20in\x20index','Tombol\x20Logout\x20diklik.','anon-','jh3','\x20RAM\x20dan\x20','Error\x20fetching\x20client\x20IP:','Admin\x20Panel','options','appendChild','isAnonymous','getElementById','add','User','@example.com','884079zppSnz','remove','length','Pengguna\x20masuk.\x20UID:','\x20panel.','Username:\x20','DOMContentLoaded','1-Unlimited\x20GB\x20(No\x20\x22Unlimited\x22\x20option)','serverSelect','Profil\x20pengguna\x20tidak\x20ditemukan,\x20menggunakan\x20default','â³\x20Mohon\x20tunggu\x20sebentar,\x20permintaan\x20sedang\x20diproses...',')\x20(Created:\x20','\x20Setiap\x20panel\x20dibatasi\x20pada\x20','\x20Anda\x20dapat\x20membuat\x20panel\x20dengan\x20','Pengguna\x20Tidak\x20Dikenal','stringify','POST','preventDefault','logoutBtn','create_panel.php','Error\x20loading\x20Firebase\x20configuration.\x20Please\x20try\x20again\x20later.','location','currentUserInfo','40%','\x20CPU.','18PzvBSJ','9574990VqFpFu','Mencoba\x20mengambil\x20profil\x20pengguna\x20dari:','5619035dUJgfa','application/json','40akyGes','\x20Anda\x20dapat\x20membuat\x20panel\x20dengan\x20RAM\x20dan\x20CPU\x20','data','status','1GB','https://t.me/upgradeuser_bot','Reseller','json','Anda\x20belum\x20login.\x20Silakan\x20login\x20terlebih\x20dahulu.','Profil\x20pengguna\x20ditemukan:','from','split','Pengguna\x20Anonim','limitMessageContent','username','Unlimited','Tidak\x20ada\x20pengguna\x20yang\x20masuk.\x20Mengarahkan\x20ke\x20login...','<option\x20value=\x221\x22>1\x20GB</option><option\x20value=\x222\x22>2\x20GB</option><option\x20value=\x223\x22>3\x20GB</option><option\x20value=\x224\x22>4\x20GB</option><option\x20value=\x225\x22>5\x20GB</option><option\x20value=\x226\x22>6\x20GB</option><option\x20value=\x227\x22>7\x20GB</option><option\x20value=\x228\x22>8\x20GB</option><option\x20value=\x229\x22>9\x20GB</option><option\x20value=\x2210\x22>10\x20GB</option><option\x20value=\x22unli\x22>Unlimited</option>','innerHTML','ram','\x20tanpa\x20batasan\x20jumlah.','textContent','email','forEach','guest','uid','disabled','Any','trim','login','Peringatan:\x20Tidak\x20dapat\x20memuat\x20profil\x20pengguna.\x20Menggunakan\x20pengaturan\x20default.','detail-panel'];_0x5eb4=function(){return _0x1283c3;};return _0x5eb4();}async function fetchFirebaseConfig(){const _0x4fb38e=_0x2251;try{const _0x23cb0f=await fetch(_0x4fb38e(0xd1));if(!_0x23cb0f['ok'])throw new Error(_0x4fb38e(0x14c)+_0x23cb0f[_0x4fb38e(0x10b)]);firebaseConfig=await _0x23cb0f[_0x4fb38e(0x10f)](),console['log'](_0x4fb38e(0x153),firebaseConfig),initializeFirebaseApp();}catch(_0x4a067b){console[_0x4fb38e(0x13d)]('Error\x20fetching\x20Firebase\x20config\x20from\x20jhonaley.php:',_0x4a067b),document[_0x4fb38e(0xe6)]('messageBox')[_0x4fb38e(0x11d)]=_0x4fb38e(0xfe),document['getElementById']('messageBox')[_0x4fb38e(0x14d)][_0x4fb38e(0xeb)](_0x4fb38e(0x130)),document[_0x4fb38e(0xe6)](_0x4fb38e(0x145))[_0x4fb38e(0x14d)][_0x4fb38e(0xe7)]('error');}}function _0x2251(_0x247ffd,_0x445454){const _0x5eb4f3=_0x5eb4();return _0x2251=function(_0x2251f2,_0x372d15){_0x2251f2=_0x2251f2-0xd1;let _0x4d5935=_0x5eb4f3[_0x2251f2];return _0x4d5935;},_0x2251(_0x247ffd,_0x445454);}let app,auth,db;function initializeFirebaseApp(){app=initializeApp(firebaseConfig),auth=getAuth(app),db=getFirestore(app),setupAuthAndUI();}const appId=typeof __app_id!=='undefined'?__app_id:'default-pterodactyl-app';let currentUserRole=_0x55f007(0x120),currentUserId=null,currentPanelCreationsCount=0x0;document[_0x55f007(0x12f)](_0x55f007(0xf0),()=>{const _0x45bdff=_0x55f007;console[_0x45bdff(0x12e)](_0x45bdff(0xdc)),fetchFirebaseConfig();});function setupAuthAndUI(){const _0x3ed479=_0x55f007,_0xb0b96e=document['getElementById'](_0x3ed479(0x128)),_0x5302de=document[_0x3ed479(0xe6)](_0x3ed479(0x145)),_0x1469f5=document[_0x3ed479(0xe6)](_0x3ed479(0x100)),_0x12087b=document[_0x3ed479(0xe6)](_0x3ed479(0xfc)),_0x27831f=document[_0x3ed479(0xe6)](_0x3ed479(0x150)),_0x564c73=document[_0x3ed479(0xe6)](_0x3ed479(0x13b)),_0x33576a=document['getElementById']('ram'),_0x42e647=document[_0x3ed479(0xe6)](_0x3ed479(0x131)),_0x1b6e03=document[_0x3ed479(0xe6)](_0x3ed479(0x14a)),_0x26def7=document[_0x3ed479(0xe6)]('upgradeUserBtn'),_0x2af9b4=document[_0x3ed479(0xe6)](_0x3ed479(0x13e)),_0x42af59=document[_0x3ed479(0xe6)]('limitMessageTitle'),_0x522434=document[_0x3ed479(0xe6)](_0x3ed479(0x115)),_0x2c2ae4=document[_0x3ed479(0xe6)](_0x3ed479(0xf2)),_0x43de9f={'jh1':{'max':0x1,'ram':_0x3ed479(0x10c),'cpu':_0x3ed479(0x101),'displayName':'Free\x20User'},'jh2':{'max':0xa,'ram':_0x3ed479(0x12c),'cpu':'1-Unlimited%','displayName':_0x3ed479(0xe8)},'jh3':{'max':_0x3ed479(0x117),'ram':'1-Unlimited\x20GB','cpu':'1-Unlimited%','displayName':_0x3ed479(0x10e)},'role3':{'max':_0x3ed479(0x117),'ram':_0x3ed479(0xf1),'cpu':'1-Unlimited%\x20(No\x20\x22Unlimited\x22\x20option)','displayName':_0x3ed479(0xe2)},'owner':{'max':_0x3ed479(0x117),'ram':_0x3ed479(0x123),'cpu':_0x3ed479(0x123),'displayName':_0x3ed479(0x143)}};_0x26def7[_0x3ed479(0xd3)]=_0x3ed479(0x10d),onAuthStateChanged(auth,async _0x21f9e9=>{const _0x439607=_0x3ed479;console[_0x439607(0x12e)](_0x439607(0x149),_0x21f9e9);if(_0x21f9e9){currentUserId=_0x21f9e9['uid'],console[_0x439607(0x12e)](_0x439607(0xed),currentUserId);try{const _0x556407=doc(db,_0x439607(0x133)+appId+'/users/'+_0x21f9e9[_0x439607(0x121)]+'/user_data/profile');console[_0x439607(0x12e)](_0x439607(0x105),_0x439607(0x133)+appId+_0x439607(0x136)+_0x21f9e9[_0x439607(0x121)]+_0x439607(0x138));const _0x47df07=await getDoc(_0x556407);let _0x35865f,_0x321380=_0x439607(0x114);if(_0x47df07[_0x439607(0x135)]())_0x35865f=_0x47df07[_0x439607(0x10a)](),console[_0x439607(0x12e)](_0x439607(0x111),_0x35865f),_0x321380=_0x35865f[_0x439607(0x116)]||_0x21f9e9[_0x439607(0x11e)]||_0x439607(0xf8);else{console[_0x439607(0x12e)](_0x439607(0xf3));const _0x397f1b=await _0x1f30f8();_0x35865f={'uid':_0x21f9e9['uid'],'username':_0x21f9e9[_0x439607(0xe5)]?_0x439607(0xde)+_0x21f9e9[_0x439607(0x121)][_0x439607(0x141)](0x0,0x8):_0x21f9e9[_0x439607(0x11e)]?_0x21f9e9['email'][_0x439607(0x113)]('@')[0x0]:_0x439607(0x137)+_0x21f9e9[_0x439607(0x121)]['substring'](0x0,0x8),'email':_0x21f9e9[_0x439607(0xe5)]?'anonymous-'+_0x21f9e9['uid'][_0x439607(0x141)](0x0,0x8)+_0x439607(0xe9):_0x21f9e9[_0x439607(0x11e)],'role':'jh1','panelCreationsCount':0x0,'createdAt':new Date()[_0x439607(0x14f)](),'ipAddress':_0x397f1b},await setDoc(_0x556407,_0x35865f),console[_0x439607(0x12e)]('Profil\x20pengguna\x20baru\x20dibuat\x20di\x20Firestore.'),_0x321380=_0x35865f[_0x439607(0x116)];}currentUserRole=_0x35865f[_0x439607(0x156)]||'jh1',currentPanelCreationsCount=_0x35865f[_0x439607(0xd9)]||0x0;const _0x1ce74a=_0x43de9f[currentUserRole]||{'max':'N/A','ram':_0x439607(0x147),'cpu':_0x439607(0x147),'displayName':_0x439607(0x155)},_0x3717de=_0x1ce74a[_0x439607(0x129)];_0x1469f5['textContent']=_0x439607(0xef)+_0x321380+'\x20('+_0x3717de+_0x439607(0xf5)+currentPanelCreationsCount+_0x439607(0xda)+_0x1ce74a[_0x439607(0xdb)]+')',console[_0x439607(0x12e)](_0x439607(0x13a),currentUserRole),_0x2af9b4['classList'][_0x439607(0xeb)]('hidden'),_0x42af59['textContent']=_0x439607(0x146)+_0x3717de+'):';let _0x5d0f44=_0x439607(0x152)+_0x1ce74a[_0x439607(0xdb)]+_0x439607(0xee);if(currentUserRole===_0x439607(0x14b))_0x5d0f44+=_0x439607(0xf6)+_0x1ce74a['ram']+_0x439607(0xe0)+_0x1ce74a[_0x439607(0x131)]+_0x439607(0x102),_0x1b6e03[_0x439607(0x14d)][_0x439607(0xeb)](_0x439607(0x130));else{if(currentUserRole===_0x439607(0x12b))_0x5d0f44+=_0x439607(0x140)+_0x1ce74a[_0x439607(0x11b)]+_0x439607(0xe0)+_0x1ce74a[_0x439607(0x131)]+_0x439607(0x102),_0x1b6e03[_0x439607(0x14d)][_0x439607(0xe7)](_0x439607(0x130));else{if(currentUserRole===_0x439607(0xdf)||currentUserRole===_0x439607(0xd4))_0x5d0f44+=_0x439607(0xf7)+_0x1ce74a[_0x439607(0x11b)]+_0x439607(0xe0)+_0x1ce74a[_0x439607(0x131)]+_0x439607(0x102),_0x1b6e03[_0x439607(0x14d)]['add'](_0x439607(0x130));else currentUserRole===_0x439607(0xd5)?(_0x5d0f44+=_0x439607(0x109)+_0x1ce74a[_0x439607(0x11b)]+_0x439607(0x11c),_0x1b6e03['classList'][_0x439607(0xe7)](_0x439607(0x130))):_0x1b6e03['classList']['add'](_0x439607(0x130));}}_0x522434[_0x439607(0x11d)]=_0x5d0f44,currentUserRole===_0x439607(0xd5)?(_0x27831f['classList']['remove'](_0x439607(0x130)),_0x1b6e03['classList'][_0x439607(0xe7)]('hidden'),_0xc9066b(),_0x36ade8()):(_0x27831f[_0x439607(0x14d)][_0x439607(0xe7)]('hidden'),currentUserRole===_0x439607(0x14b)?(_0xf83ad3(),_0x5b07c2()):(_0x1b6e03[_0x439607(0x14d)][_0x439607(0xe7)](_0x439607(0x130)),_0xc9066b(),_0x36ade8()));}catch(_0x3cd148){console[_0x439607(0x13d)](_0x439607(0x134),_0x3cd148),currentUserRole='jh1',currentPanelCreationsCount=0x0,_0x1469f5['textContent']='Masuk\x20sebagai:\x20Pengguna\x20Anonim\x20(Dibuat:\x20'+currentPanelCreationsCount+'x)',_0x27831f[_0x439607(0x14d)]['add'](_0x439607(0x130)),_0x1b6e03['classList'][_0x439607(0xeb)]('hidden'),_0xf83ad3(),_0x5b07c2(),showMessage(_0x439607(0x126),'info');}}else console[_0x439607(0x12e)](_0x439607(0x118)),window[_0x439607(0xff)][_0x439607(0xd3)]='login';}),_0x12087b[_0x3ed479(0x12f)]('click',async()=>{const _0x39190a=_0x3ed479;console[_0x39190a(0x12e)](_0x39190a(0xdd)),await signOut(auth),window['location']['href']=_0x39190a(0x125);});async function _0x1f30f8(){const _0x3f879a=_0x3ed479;try{const _0x124375=await fetch('https://api.ipify.org?format=json'),_0x3485fc=await _0x124375[_0x3f879a(0x10f)]();return _0x3485fc['ip'];}catch(_0x242fc6){return console['error'](_0x3f879a(0xe1),_0x242fc6),null;}}function _0xf83ad3(){const _0x15fb35=_0x3ed479;_0x33576a['innerHTML']='',_0x42e647[_0x15fb35(0x11a)]='';const _0x39d0f7=document['createElement'](_0x15fb35(0x151));_0x39d0f7[_0x15fb35(0x13f)]='1',_0x39d0f7['textContent']='1\x20GB',_0x33576a[_0x15fb35(0xe4)](_0x39d0f7),_0x33576a[_0x15fb35(0x13f)]='1',_0x33576a['disabled']=!![];const _0x207aa8=document[_0x15fb35(0xd6)](_0x15fb35(0x151));_0x207aa8['value']='40',_0x207aa8[_0x15fb35(0x11d)]='40%',_0x42e647[_0x15fb35(0xe4)](_0x207aa8),_0x42e647[_0x15fb35(0x13f)]='40',_0x42e647[_0x15fb35(0x122)]=!![];}function _0xc9066b(){const _0x544ab9=_0x3ed479;_0x33576a[_0x544ab9(0x122)]=![],_0x42e647[_0x544ab9(0x122)]=![],_0x33576a['options'][_0x544ab9(0xec)]===0x1&&_0x33576a['options'][0x0][_0x544ab9(0x13f)]==='1'&&(_0x33576a[_0x544ab9(0x11a)]=_0x544ab9(0x119),_0x33576a['value']='1'),_0x42e647[_0x544ab9(0xe3)]['length']===0x1&&_0x42e647['options'][0x0][_0x544ab9(0x13f)]==='40'&&(_0x42e647[_0x544ab9(0x11a)]='<option\x20value=\x2240\x22>40%</option><option\x20value=\x2260\x22>60%</option><option\x20value=\x2280\x22>80%</option><option\x20value=\x22100\x22>100%</option><option\x20value=\x22120\x22>120%</option><option\x20value=\x22140\x22>140%</option><option\x20value=\x22160\x22>160%</option><option\x20value=\x22180\x22>180%</option><option\x20value=\x22200\x22>200%</option><option\x20value=\x22220\x22>220%</option><option\x20value=\x22unli\x22>Unlimited</option>',_0x42e647['value']='40');}function _0x5b07c2(){const _0x2ba202=_0x3ed479;Array[_0x2ba202(0x112)](_0x2c2ae4[_0x2ba202(0xe3)])[_0x2ba202(0x11f)](_0x5d66d6=>{const _0x7ecebc=_0x2ba202;_0x5d66d6[_0x7ecebc(0x13f)]!=='1'?_0x5d66d6[_0x7ecebc(0x122)]=!![]:_0x5d66d6[_0x7ecebc(0x122)]=![];}),_0x2c2ae4[_0x2ba202(0x13f)]='1',_0x2c2ae4[_0x2ba202(0x122)]=!![];}function _0x36ade8(){const _0x4508d3=_0x3ed479;Array['from'](_0x2c2ae4[_0x4508d3(0xe3)])[_0x4508d3(0x11f)](_0x93bc8d=>{const _0x1dc0bb=_0x4508d3;_0x93bc8d[_0x1dc0bb(0x122)]=![];}),_0x2c2ae4[_0x4508d3(0x122)]=![];}_0xb0b96e[_0x3ed479(0x12f)]('submit',async function(_0x255a18){const _0x52e5d2=_0x3ed479;_0x255a18[_0x52e5d2(0xfb)]();if(!currentUserId){showMessage(_0x52e5d2(0x110),_0x52e5d2(0x13d)),setTimeout(()=>window[_0x52e5d2(0xff)][_0x52e5d2(0xd3)]=_0x52e5d2(0x125),0x7d0);return;}const _0x232e4b='pterodactyl',_0x196783=document[_0x52e5d2(0xe6)](_0x52e5d2(0x116))[_0x52e5d2(0x13f)][_0x52e5d2(0x124)](),_0x4ab01e=document[_0x52e5d2(0xe6)](_0x52e5d2(0x11b))[_0x52e5d2(0x13f)],_0x519a49=document['getElementById'](_0x52e5d2(0x131))[_0x52e5d2(0x13f)],_0x3b757a=document[_0x52e5d2(0xe6)](_0x52e5d2(0xf2))[_0x52e5d2(0x13f)];if(currentUserRole===_0x52e5d2(0x14b)){if(_0x4ab01e!=='1'||_0x519a49!=='40'){showMessage(_0x52e5d2(0x142),_0x52e5d2(0x13d));return;}if(_0x3b757a!=='1'){showMessage('Sebagai\x20pengguna\x20gratis,\x20Anda\x20hanya\x20dapat\x20membuat\x20panel\x20di\x20Server\x201\x20(Publik).',_0x52e5d2(0x13d));return;}}showMessage(_0x52e5d2(0xf4),_0x52e5d2(0x144));try{const _0x74ce29=await fetch(_0x52e5d2(0xfd),{'method':_0x52e5d2(0xfa),'headers':{'Content-Type':_0x52e5d2(0x107)},'body':JSON[_0x52e5d2(0xf9)]({'userId':currentUserId,'userRole':currentUserRole,'username':_0x196783,'ram':_0x4ab01e,'cpu':_0x519a49,'panelType':_0x232e4b,'currentPanelCreationsCount':currentPanelCreationsCount,'serverId':_0x3b757a})}),_0x29d80c=await _0x74ce29[_0x52e5d2(0x10f)]();if(_0x29d80c['success']){showMessage('âœ…\x20'+_0x29d80c[_0x52e5d2(0x12a)]+_0x52e5d2(0x139),'success'),currentPanelCreationsCount=_0x29d80c['newPanelCreationsCount']||currentPanelCreationsCount;const _0x3609c1=_0x43de9f[currentUserRole]||{'max':'N/A','ram':'N/A','cpu':_0x52e5d2(0x147),'displayName':'Unknown\x20Role'},_0x1df98b=_0x29d80c[_0x52e5d2(0x10a)][_0x52e5d2(0x116)]||_0x52e5d2(0xf8),_0x2a7f6e=_0x3609c1['displayName'];_0x1469f5[_0x52e5d2(0x11d)]=_0x52e5d2(0xef)+_0x1df98b+'\x20('+_0x2a7f6e+_0x52e5d2(0xf5)+currentPanelCreationsCount+_0x52e5d2(0xda)+_0x3609c1[_0x52e5d2(0xdb)]+')',_0x42af59[_0x52e5d2(0x11d)]=_0x52e5d2(0x146)+_0x2a7f6e+'):';let _0x15d680=_0x52e5d2(0x152)+_0x3609c1[_0x52e5d2(0xdb)]+_0x52e5d2(0xee);if(currentUserRole==='jh1')_0x15d680+='\x20Setiap\x20panel\x20dibatasi\x20pada\x20'+_0x3609c1['ram']+_0x52e5d2(0xe0)+_0x3609c1[_0x52e5d2(0x131)]+_0x52e5d2(0x102);else{if(currentUserRole==='jh2')_0x15d680+='\x20Anda\x20memiliki\x20akses\x20ke\x20'+_0x3609c1[_0x52e5d2(0x11b)]+_0x52e5d2(0xe0)+_0x3609c1[_0x52e5d2(0x131)]+_0x52e5d2(0x102);else(currentUserRole===_0x52e5d2(0xdf)||currentUserRole==='role3')&&(_0x15d680+=_0x52e5d2(0xf7)+_0x3609c1['ram']+'\x20RAM\x20dan\x20'+_0x3609c1[_0x52e5d2(0x131)]+'\x20CPU.');}_0x522434[_0x52e5d2(0x11d)]=_0x15d680,setTimeout(()=>{const _0x59a527=_0x52e5d2;window[_0x59a527(0xff)][_0x59a527(0xd3)]=_0x59a527(0x127);},0x5dc);}else showMessage('âŒ\x20'+_0x29d80c[_0x52e5d2(0x12a)],_0x52e5d2(0x13d));}catch(_0x4f80f7){console[_0x52e5d2(0x13d)](_0x52e5d2(0x13c),_0x4f80f7),showMessage(_0x52e5d2(0x12d)+(_0x4f80f7[_0x52e5d2(0x12a)]||_0x52e5d2(0x132)),_0x52e5d2(0x13d));}});}function showMessage(_0x1c90ff,_0x4f4b97=_0x55f007(0x144)){const _0x51e6d8=_0x55f007;messageBox[_0x51e6d8(0x11d)]=_0x1c90ff,messageBox['classList'][_0x51e6d8(0xeb)](_0x51e6d8(0x130)),messageBox[_0x51e6d8(0x14d)][_0x51e6d8(0xeb)](_0x51e6d8(0x144),_0x51e6d8(0xd2),_0x51e6d8(0x13d)),messageBox['classList'][_0x51e6d8(0xe7)](_0x4f4b97);}
+    </script>
+</body>
+</html>
